@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" font-family="Noto Sans CJK KR, sans-serif">
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+<filter id="sh" x="-5%" y="-5%" width="115%" height="125%"><feDropShadow dx="2" dy="3" stdDeviation="1.5" flood-opacity="0.18"/></filter>
+<style>.lbl{paint-order:stroke;stroke:#eef3f6;stroke-width:5px;stroke-linejoin:round}</style>
+</defs>
+<rect width="1600" height="1000" fill="#eef3f6"/>
+<polygon points="0,0 1020,0 960,130 0,130" fill="#3a3a3a"/>
+<text x="40" y="38" font-size="15" font-weight="700" fill="#f5b041">pang-w1 · 자기강화 월드모델</text>
+<text x="40" y="64" font-size="16" fill="#d9d9d9">"나는 모델에게 환경을 주고, 모델은 사고를 익힌다."</text>
+<text x="40" y="114" font-size="42" font-weight="700" fill="#ffffff">아테나 v2 모델 구조</text>
+<rect x="1060" y="20" width="510" height="96" rx="8" fill="#f2f6e6" stroke="#9aa86a" stroke-width="1.3"/>
+<text x="1076" y="42" font-size="13" font-weight="700" fill="#666">학습 시기</text>
+<rect x="1080" y="56" width="200" height="40" rx="4" fill="#f5a623" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1180.0" y="81.4" text-anchor="middle" font-size="15" fill="#1f2a44">초반 · 도우미 시기</text>
+<line x1="1286" y1="76" x2="1336" y2="76" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<rect x="1342" y="56" width="214" height="40" rx="4" fill="#7fb3d5" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1449.0" y="81.4" text-anchor="middle" font-size="15" fill="#1f2a44">중후반 · 혼자 (≈ v1)</text>
+<rect x="150" y="172" width="230" height="64" rx="7" fill="#a9d18e" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="265.0" y="202.0" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2a44">도우미</text>
+<text x="265.0" y="224.0" text-anchor="middle" font-size="13" fill="#1f2a44" opacity="0.85">JEPA 등 · 초반의 눈</text>
+<rect x="150" y="262" width="230" height="56" rx="7" fill="#f7e6c4" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="265.0" y="297.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2a44">인간</text>
+<rect x="560" y="182" width="240" height="72" rx="7" fill="#f5a623" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="680.0" y="216.0" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2a44">학습공간</text>
+<text x="680.0" y="238.0" text-anchor="middle" font-size="13" fill="#1f2a44" opacity="0.85">실험대 · 간섭할 때만 존재</text>
+<rect x="545" y="410" width="270" height="84" rx="7" fill="#f39c12" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="680.0" y="450.0" text-anchor="middle" font-size="30" font-weight="700" fill="#1f2a44">아테나</text>
+<text x="680.0" y="472.0" text-anchor="middle" font-size="13" fill="#1f2a44" opacity="0.85">보고 · 예측하고 · 새기는 주체</text>
+<rect x="560" y="650" width="240" height="72" rx="7" fill="#7fb3d5" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="680.0" y="684.0" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2a44">우주</text>
+<text x="680.0" y="706.0" text-anchor="middle" font-size="13" fill="#1f2a44" opacity="0.85">아테나가 이해한 세계 · "수"</text>
+<rect x="990" y="182" width="230" height="64" rx="7" fill="#b0bec5" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="1105.0" y="212.0" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2a44">동영상</text>
+<text x="1105.0" y="234.0" text-anchor="middle" font-size="13" fill="#1f2a44" opacity="0.85">현실 세계</text>
+<rect x="990" y="410" width="230" height="64" rx="7" fill="#7a7a7a" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="1105.0" y="440.0" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">최종 심판</text>
+<text x="1105.0" y="462.0" text-anchor="middle" font-size="13" fill="#ffffff" opacity="0.85">시뮬레이터 · 현실 데이터</text>
+<rect x="990" y="650" width="230" height="64" rx="7" fill="#c39bd3" stroke="#4a4a4a" stroke-width="1.6" filter="url(#sh)"/>
+<text x="1105.0" y="680.0" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2a44">감시 모델</text>
+<text x="1105.0" y="702.0" text-anchor="middle" font-size="13" fill="#1f2a44" opacity="0.85">별도의 월드모델</text>
+<line x1="380" y1="204" x2="558" y2="208" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="469.0" y="196" text-anchor="middle" font-size="14" font-weight="600" fill="#333" class="lbl">장면 제시 (초반)</text>
+<line x1="380" y1="290" x2="558" y2="236" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="470" y="280" text-anchor="middle" font-size="14" font-weight="600" fill="#333" class="lbl">장면 제시</text>
+<line x1="645" y1="256" x2="645" y2="408" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="632" y="336" text-anchor="end" font-size="14" font-weight="600" fill="#333" class="lbl">관찰</text>
+<line x1="715" y1="408" x2="715" y2="256" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="728" y="336" text-anchor="start" font-size="14" font-weight="600" fill="#333" class="lbl">시험 장면 직접 생성</text>
+<line x1="645" y1="496" x2="645" y2="648" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="632" y="578" text-anchor="end" font-size="14" font-weight="600" fill="#333" class="lbl">새김 ("수")</text>
+<line x1="715" y1="648" x2="715" y2="496" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="728" y="578" text-anchor="start" font-size="14" font-weight="600" fill="#333" class="lbl">사고 · 새 예측</text>
+<line x1="990" y1="228" x2="817" y2="418" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="925" y="300" text-anchor="middle" font-size="14" font-weight="600" fill="#333" class="lbl">현실 학습 (중후반)</text>
+<line x1="988" y1="442" x2="817" y2="452" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="902" y="436" text-anchor="middle" font-size="14" font-weight="600" fill="#333" class="lbl">정답 확인</text>
+<line x1="988" y1="682" x2="802" y2="686" stroke="#444" stroke-width="1.8" marker-end="url(#ar)"/>
+<text x="895" y="674" text-anchor="middle" font-size="14" font-weight="600" fill="#333" class="lbl">감시</text>
+<rect x="60" y="350" width="340" height="200" rx="6" fill="#f1f8ea" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="72" y="372" font-size="14" font-weight="700" fill="#555">도우미 역할</text>
+<rect x="76" y="382" width="308" height="32" rx="4" fill="#d5e8c4" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="403.04" text-anchor="middle" font-size="14" fill="#1f2a44">초반의 보는 눈</text>
+<rect x="76" y="422" width="308" height="32" rx="4" fill="#d5e8c4" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="443.04" text-anchor="middle" font-size="14" fill="#1f2a44">학습 도우미</text>
+<rect x="76" y="462" width="308" height="32" rx="4" fill="#d5e8c4" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="483.04" text-anchor="middle" font-size="14" fill="#1f2a44">사회 학습: 되는 것 / 안 되는 것 지도</text>
+<rect x="76" y="502" width="308" height="32" rx="4" fill="#e6e6e6" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="522.68" text-anchor="middle" font-size="13" fill="#1f2a44">퇴장: 스스로 가능 + n번째 새김에 반대 없음</text>
+<rect x="60" y="590" width="340" height="230" rx="6" fill="#fff6e3" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="72" y="612" font-size="14" font-weight="700" fill="#555">학습 루프 (초반)</text>
+<rect x="76" y="622" width="308" height="34" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="644.04" text-anchor="middle" font-size="14" fill="#1f2a44">① 학습공간의 장면 보기</text>
+<rect x="76" y="666" width="308" height="34" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="688.04" text-anchor="middle" font-size="14" fill="#1f2a44">② 결과 예측</text>
+<rect x="76" y="710" width="308" height="34" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="732.04" text-anchor="middle" font-size="14" fill="#1f2a44">③ 맞힌 개념을 우주에 "수"로 새김</text>
+<rect x="76" y="754" width="308" height="50" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="230.0" y="784.04" text-anchor="middle" font-size="14" fill="#1f2a44"></text>
+<text x="230" y="775" text-anchor="middle" font-size="14" fill="#1f2a44">④ 이해 확인</text>
+<text x="230" y="795" text-anchor="middle" font-size="12" fill="#1f2a44">우주 안에서 사고 · 다른 상황으로 재시험</text>
+<rect x="470" y="760" width="420" height="150" rx="6" fill="#eaf3fa" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="482" y="782" font-size="14" font-weight="700" fill="#555">우주에 새기는 것</text>
+<rect x="486" y="792" width="190" height="40" rx="4" fill="#c7dff0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="581.0" y="817.04" text-anchor="middle" font-size="14" fill="#1f2a44">물리 법칙 (중력 …)</text>
+<rect x="686" y="792" width="190" height="40" rx="4" fill="#c7dff0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="781.0" y="817.04" text-anchor="middle" font-size="14" fill="#1f2a44">사회 · 언어 (동영상 후)</text>
+<rect x="486" y="842" width="190" height="40" rx="4" fill="#c7dff0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="581.0" y="867.04" text-anchor="middle" font-size="14" fill="#1f2a44">전부 "수"로</text>
+<rect x="686" y="842" width="190" height="40" rx="4" fill="#c7dff0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="781.0" y="867.04" text-anchor="middle" font-size="14" fill="#1f2a44">목적: 연산량 최소</text>
+<rect x="1260" y="160" width="310" height="250" rx="6" fill="#f3edf7" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="1272" y="182" font-size="14" font-weight="700" fill="#555">새 법칙 발견 루프 (중후반)</text>
+<rect x="1276" y="192" width="278" height="34" rx="4" fill="#e2d3ec" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="213.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">미증명 영역 탐색 (호기심 RL)</text>
+<rect x="1276" y="234" width="278" height="34" rx="4" fill="#e2d3ec" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="255.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">시험 장면을 학습공간에 생성</text>
+<rect x="1276" y="276" width="278" height="34" rx="4" fill="#e2d3ec" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="297.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">실험 · 감시 모델이 감시</text>
+<rect x="1276" y="318" width="278" height="34" rx="4" fill="#e2d3ec" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="339.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">최종 심판 확인</text>
+<rect x="1276" y="360" width="278" height="34" rx="4" fill="#e2d3ec" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="381.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">우주에 새김 → 다시 탐색 ↺</text>
+<rect x="1260" y="430" width="310" height="170" rx="6" fill="#fff6e3" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="1272" y="452" font-size="14" font-weight="700" fill="#555">첫 실험</text>
+<rect x="1276" y="462" width="278" height="34" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="483.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">1. 공 낙하 숫자만 → 수식 찾기</text>
+<rect x="1276" y="504" width="278" height="34" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="525.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">2. 처음 보는 높이 · 속도에서도</text>
+<rect x="1276" y="546" width="278" height="34" rx="4" fill="#fbd9a0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="567.86" text-anchor="middle" font-size="13.5" fill="#1f2a44">3. 성공 시 → 영상에서 변수 (눈)</text>
+<rect x="1260" y="620" width="310" height="100" rx="6" fill="#eaf3fa" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="1272" y="642" font-size="14" font-weight="700" fill="#555">확장 순서</text>
+<rect x="1276" y="652" width="278" height="46" rx="4" fill="#c7dff0" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1415.0" y="680.4" text-anchor="middle" font-size="15" fill="#1f2a44">과학(물리)  →  사회 · 언어</text>
+<rect x="920" y="760" width="650" height="150" rx="6" fill="#f0f0f0" stroke="#8a8a8a" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="932" y="782" font-size="14" font-weight="700" fill="#555">열린 숙제</text>
+<rect x="936" y="792" width="147" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1009.5" y="816.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">번역기: 영상→변수→수</text>
+<rect x="1093" y="792" width="147" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1166.5" y="816.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">학습 목표 식 L = ?</text>
+<rect x="1250" y="792" width="147" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1323.5" y="816.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">눈 (도우미 퇴장 후)</text>
+<rect x="1407" y="792" width="147" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1480.5" y="816.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">퇴장 기준</text>
+<rect x="936" y="842" width="199" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1035.5" y="866.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">최종 심판 (시험 어려운 문제)</text>
+<rect x="1145" y="842" width="199" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1244.5" y="866.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">감시 모델의 역할</text>
+<rect x="1354" y="842" width="199" height="40" rx="4" fill="#d9d9d9" stroke="#6b6b6b" stroke-width="1"/>
+<text x="1453.5" y="866.5" text-anchor="middle" font-size="12.5" fill="#1f2a44">사회를 '수'로: 내용 손실</text>
+<rect x="60" y="940" width="340" height="30" rx="4" fill="#cfe6b8" opacity="0.85"/>
+<text x="230.0" y="961" text-anchor="middle" font-size="16" font-weight="600" fill="#333">가르침과 학습 루프</text>
+<rect x="470" y="940" width="420" height="30" rx="4" fill="#a9cde6" opacity="0.85"/>
+<text x="680.0" y="961" text-anchor="middle" font-size="16" font-weight="600" fill="#333">새김과 우주</text>
+<rect x="920" y="940" width="650" height="30" rx="4" fill="#c8c8c8" opacity="0.85"/>
+<text x="1245.0" y="961" text-anchor="middle" font-size="16" font-weight="600" fill="#333">검증 · 발견 · 열린 숙제</text>
+<text x="1570" y="992" text-anchor="end" font-size="11" fill="#888">아테나 v2 · 2026-11-16</text>
+</svg>
